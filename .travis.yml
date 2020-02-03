@@ -11,3 +11,9 @@ addons:
     - libarchive-dev
 matrix:
   fast_finish: true
+env:
+  global:
+  - REPOS=d-m-u/openshift@updating_faraday
+  matrix:
+  - TEST_REPO=manageiq-providers-openshift
+  - TEST_REPO=manageiq-providers-kubernetes
